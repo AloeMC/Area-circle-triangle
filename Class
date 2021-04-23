@@ -1,0 +1,41 @@
+using System;
+
+namespace MindBox1
+{
+    public class AreaCircle
+    {
+        public const double PI = 3.14;
+        public double Radius;
+
+        public AreaCircle(double radius)
+        {
+            Radius = radius;
+        }
+
+        public double Area()
+        {
+            return PI * Math.Pow(Radius, 2);
+        }
+    }
+
+    public class AreaTriangle
+    {
+        public double A;
+        public double B;
+        public double C;
+        public double P;
+        public double S;
+         
+        public AreaTriangle(double a, double b, double c)
+        {
+            A = a;
+            B = b;
+            C = c;
+        } 
+        public double TriangleArea()
+        {
+           P = (A + B + C) / 2;
+           return S = Math.Sqrt(P * (P - A) * (P - B) * (P - C));
+        }
+    }
+}
