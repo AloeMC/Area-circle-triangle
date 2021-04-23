@@ -1,5 +1,4 @@
 using System;
-
 namespace MindBox1
 {
     public class AreaCircle
@@ -32,10 +31,19 @@ namespace MindBox1
             B = b;
             C = c;
         } 
-        public double TriangleArea()
+        public  double TriangleArea()
         {
            P = (A + B + C) / 2;
-           return S = Math.Sqrt(P * (P - A) * (P - B) * (P - C));
+           return S = Math.Sqrt(P * (P - A) * (P - B) * (P - C));  
+        }
+
+        public void RectangularOrNot()
+        {
+            if ((A * A + B * B == C * C) || (A * A + C * C == B * B) || (C * C + B * B == A * A))
+            {
+                Console.WriteLine("Треугольник рямоугольный");
+            }
+            else Console.WriteLine("Треугольник не прямоугольный");
         }
     }
 }
