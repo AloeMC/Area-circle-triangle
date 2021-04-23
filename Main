@@ -1,0 +1,36 @@
+using System;
+using MindBox1;
+namespace MindBox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double rad, a, b, c;
+
+
+            Console.Write("Введите радиус: ");
+
+                rad = Convert.ToInt32(Console.ReadLine());
+
+            AreaCircle cirlcle = new AreaCircle(rad);
+            Console.WriteLine("Площадь круга = {0} \n", cirlcle.Area());
+
+
+
+            Console.Write("Введите стороны треугольника \n");
+
+            Console.Write("A = ");
+                a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("B = ");
+                b = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("C = ");
+                c = Convert.ToInt32(Console.ReadLine());
+          
+            AreaTriangle triangle = new AreaTriangle(a, b, c);
+            Console.WriteLine("Площадь треугольника = {0:0.00}", triangle.TriangleArea());
+        }
+    }
+}
